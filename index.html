@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta http-equiv="Cache-Control" content="no-cache">
-  <meta name="taplink-build" content="20261126212141">
+  <meta name="taplink-build" content="20261127214818">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#5F5CF2">
@@ -235,6 +235,8 @@ h1 span{display:block;color:var(--violet)}
 .card-million .tag{color:#5e78c3}
 .card-five .icon{background:#e6f7f1;color:#368b7b}
 .card-five .tag{color:#368b7b}
+.card-gonka .icon{background:#fff3e0;color:#E57F3C}
+.card-gonka .tag{color:#E57F3C}
 .card-halloween .icon{background:#fff0e3;color:#c0611f}
 .card-halloween .tag{color:#c0611f}
 
@@ -600,7 +602,7 @@ footer span{color:var(--violet)}
   /* Встроенные браузеры (TikTok, Instagram) держат старую копию страницы.
      Сверяем номер сборки с сервером; если вышла новая, перезагружаемся. */
   (function(){
-    var BUILD = '20261126212141';  /* номер сборки, тот же, что в meta taplink-build */
+    var BUILD = '20261127214818';  /* номер сборки, тот же, что в meta taplink-build */
     try {
       fetch(location.pathname + '?nocache=' + Date.now(), {cache:'no-store'})
         .then(function(r){ return r.ok ? r.text() : ''; })
